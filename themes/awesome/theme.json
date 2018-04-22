@@ -33,7 +33,8 @@
         "src/latex/examples/cv/honors.tex",
         "src/latex/examples/cv/presentation.tex",
         "src/latex/examples/cv/skills.tex",
-        "src/latex/examples/cv/writing.tex"
+        "src/latex/examples/cv/writing.tex",
+        "src/latex/examples/cv/projects.tex"
       ],
       "symLinks": {
         "latex/examples/awesome-cv.cls": "../awesome-cv.cls",
