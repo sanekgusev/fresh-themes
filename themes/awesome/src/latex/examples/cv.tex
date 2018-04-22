@@ -53,13 +53,15 @@
 %-------------------------------------------------------------------------------
 \name{[~ print(h.initialWords( r.name )) ~]}{[[ h.lastWord( r.name ) ]]}
 [~ if (r.info.label) { ~]\position{[[ r.info.label ]]}[~ } ~]
-\address{[[ r.location.address ]]}
+\address{[[ r.location.address ]], [[ r.location.city ]], [[ r.location.region ]], [[ r.location.code ]], [[ r.location.country ]]}
 
 \mobile{[[ r.contact.phone ]]}
 \email{[[ r.contact.email ]]}
 \homepage{[[ r.contact.website ]]}
 [~ if (r.hasProfile('github')) { ~]\github{[[ r.getProfile('github').user ]]}[~ } ~]
 [~ if (r.hasProfile('linkedin')) { ~]\linkedin{[[ r.getProfile('github').user ]]}[~ } ~]
+[~ if (r.hasProfile('twitter')) { ~]\twitter{@[[ r.getProfile('twitter').user ]]}[~ } ~]
+[~ if (r.hasProfile('skype')) { ~]\skype{[[ r.getProfile('skype').user ]]}[~ } ~]
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
 % \skype{skype-id}
