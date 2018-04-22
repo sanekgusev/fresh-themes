@@ -2,7 +2,7 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Presentation}
+\cvsection{Presentations}
 
 
 %-------------------------------------------------------------------------------
@@ -12,11 +12,11 @@
 [~ _.each( r.speaking, function(spk) { ~]
 %---------------------------------------------------------
   \cventry
-    {[[ spk.title ]]} % Role
-    {[[ spk.event ]])} % Event
+    {[[ spk.role ]]} % Role
+    {[[ spk.event ]]} % Event
     {[[ spk.location ]]} % Location
     {[[ h.date(spk.date) ]]} % Date(s)
-    {[~ if (r.speaking && r.speaking.length) { ~]
+    {[~ if (spk.highlights && spk.highlights.length) { ~]
       \begin{cvitems} % Description(s)
 [[ h.pad( spk.highlights.map( function(h) { return '\\item {' + h + '}' }), -8 ) ]]
       \end{cvitems}
